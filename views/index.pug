@@ -1,0 +1,22 @@
+doctype html
+html 
+    head 
+        title= "main view"
+        meta(name="viewport" content="width=device-width, initial-scale=1")
+        link(rel="stylesheet", href="/css/style.css")
+    body 
+        h1 Actualizar
+        form(action="/update", method="post")
+            label(for="nombre") Nombre:
+            input(type="text", id="nombre", name="nombre")
+            br
+            label(for="correo") Correo electrónico:
+            input(type="email", id="correo", name="correo")
+            br
+            label(for="apellido") Apellido:
+            input(type="text", id="apellido", name="apellido")
+            br
+            label(for="telefono") Telefono:
+            input(type="text", id="telefono", name="telefono")
+            br
+            input(type="submit", value="Enviar")
